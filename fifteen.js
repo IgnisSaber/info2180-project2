@@ -3,7 +3,7 @@
 function first(){
 	var puzzlearea = $("#puzzlearea");
 	var c = puzzlearea.children();
-//	c[0].style.backgroundColor = "yellow";
+
 	var x = 0;
 	var y = 0;
 	var count = 0;
@@ -21,11 +21,10 @@ function first(){
 	var a = 0;
 	var b = 0;
 	var counter = 0;
-//	$(c[5]).css('background-position', `${a}px ${b}px`) ;
-//	$(c[5]).css('background-position', '-100px -100px') ;
+
 	for(var j=0;j<c.length;j++){
 		$(c[j]).css('background-position',`${a}px ${b}px`);
-//		backgroundPosition = "${x}px ${y}px";
+
 		a-=100;
 		counter+=1;
 		if(counter%4==0){
@@ -36,8 +35,44 @@ function first(){
 	}
 }
 
-function adjustBackground(){
-	var topLeft = puzzlearea
-}
+//function learnPosition(){
+//	$(c[0]).click(function(){
+//	var x = $(c[0]).position();
+
+//	alert("Top position: " + x.top + " Left position: " + x.left);})
+//}
+
+//function testMove(){
+//	$(c[0]).click(function(){
+//	$(c[0]).css({top: 300, left 300});
+//	}
+//}
+
+//function moveTile(){
+//	for(var j=0;j<c.length;j++){
+//		$(c[i]).click(function(){
+//			$(c[i]).offset({top: 300, left: 300});
+//		});
+//	}
+//}
+
+//function assignPos(){
+//	var xPosition = 0;
+//	var yPosition = 0;
+//	counting = 0;
+//	for(var k=0; k<c.length; k++){
+//		xPosition+=1;
+//	}
+
+//}
+
+//funtion canSlide(){
+//	var emptyX = 4;
+//	var emptyY = 4;
+//}
+
+//function adjustBackground(){
+//	var topLeft = puzzlearea
+//}
 
 window.onload = first;
